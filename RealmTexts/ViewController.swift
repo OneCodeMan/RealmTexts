@@ -1,11 +1,6 @@
 import UIKit
 import RealmSwift
 
-class Entry: Object {
-    dynamic var title = ""
-    dynamic var content = ""
-}
-
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
@@ -44,6 +39,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.textLabel?.text = entry?.title
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let entry = realmEntries?[indexPath.row]
+        
+        performSegue(withIdentifier: "moveToDetail", sender: entry)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let entry = sender as? Entry {
+            if let detailVC = segue.destination as? AddEntryViewController {
+                detailVC.entry = entry
+            }
+        }
     }
 
 }

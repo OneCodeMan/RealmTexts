@@ -13,6 +13,8 @@
 		16774B9E1F65E62D0072F592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16774B9D1F65E62D0072F592 /* Assets.xcassets */; };
 		16774BA11F65E62D0072F592 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16774B9F1F65E62D0072F592 /* LaunchScreen.storyboard */; };
 		16774BA91F66A39D0072F592 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16774BA81F66A39D0072F592 /* TextCell.swift */; };
+		16774BAB1F6731BA0072F592 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16774BAA1F6731BA0072F592 /* Entry.swift */; };
+		16774BAD1F6745480072F592 /* AddEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16774BAC1F6745480072F592 /* AddEntryViewController.swift */; };
 		B5C8FC8CE8097CFB1C3E9AD3 /* Pods_RealmTexts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEA955BA53B5AAE2EE2B186 /* Pods_RealmTexts.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		16774BA01F65E62D0072F592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16774BA21F65E62D0072F592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16774BA81F66A39D0072F592 /* TextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		16774BAA1F6731BA0072F592 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		16774BAC1F6745480072F592 /* AddEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEntryViewController.swift; sourceTree = "<group>"; };
 		3A26040FA2AB0FF66F7B2C0A /* Pods-RealmTexts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTexts.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTexts/Pods-RealmTexts.release.xcconfig"; sourceTree = "<group>"; };
 		9EEA955BA53B5AAE2EE2B186 /* Pods_RealmTexts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmTexts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3C1E7CFC52CE2BA6D3DD98 /* Pods-RealmTexts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTexts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmTexts/Pods-RealmTexts.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 				16774B9F1F65E62D0072F592 /* LaunchScreen.storyboard */,
 				16774BA21F65E62D0072F592 /* Info.plist */,
 				16774BA81F66A39D0072F592 /* TextCell.swift */,
+				16774BAA1F6731BA0072F592 /* Entry.swift */,
+				16774BAC1F6745480072F592 /* AddEntryViewController.swift */,
 			);
 			path = RealmTexts;
 			sourceTree = "<group>";
@@ -215,8 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16774BAB1F6731BA0072F592 /* Entry.swift in Sources */,
 				16774B991F65E62D0072F592 /* ViewController.swift in Sources */,
 				16774BA91F66A39D0072F592 /* TextCell.swift in Sources */,
+				16774BAD1F6745480072F592 /* AddEntryViewController.swift in Sources */,
 				16774B971F65E62D0072F592 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
